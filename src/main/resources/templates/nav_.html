@@ -1,0 +1,73 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">-->
+
+<!-- navigation -->
+<div class="navigation"  th:fragment="_nav">
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"> gt</span>
+          <span class="icon-bar"> gt</span>
+          <span class="icon-bar"> </span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a th:href="@{/}">主页</a></li>
+          <li><a th:href="@{/}" >文章</a></li>
+          <li><a th:href="@{/}">说说 </a></li>
+          <li><a th:href="@{/MyAccount}">我的</a></li>
+          <li><a th:href="@{/register}">注册</a></li>
+        </ul>
+        <div class="clearfix"> </div>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+  </div>
+</div>
+
+<!--footer-->
+<div class="copyrights" th:fragment="_footer">
+  <div class="container">
+    <div class="footer-logo">
+      <a th:href="@{/}"><img src="/images/logo.png" alt="" width="10%" height="6.2%"/></a>
+    </div>
+    <div class="copy-right">
+      <a th:href="@{/}"> <p> 我的空间 </p></a>
+    </div>
+  </div>
+</div>
+
+
+<!--information-->
+<div class="information-section" th:fragment="_information">
+  <div class="container">
+    <div class="information-grids wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+      <div class="col-md-4 info-grid loction">
+        <h3>Contact Me</h3>
+        <ul class="loction-text">
+          <li><img src="/images/mail.png" alt=""></li>
+          <li><a href="mailto:info@example.com">z1124562662@gmail.com </a></li>
+          <div class="clearfix"> </div>
+        </ul>
+      </div>
+
+      <div class="col-md-4 info-grid information">
+        <h3>Wechat</h3>
+        <div class="list styled arrow-list2 two">
+          <ul>
+            <li><a href="#"><img src="/images/tick1.png" alt="">wowowo</a></li>
+            <div class="clearfix"> </div>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4 info-grid custom">
+        <h3>About me</h3>
+        <p>shabi</p>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+</div>

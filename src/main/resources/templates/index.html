@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Home</title>
+
+<link href="/css/bootstrap.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--	Specifies the character encoding for the document.-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--	Defines a time interval for the document to refresh itself.-->
+<!--<meta http-equiv="refresh" content="30000">-->
+<meta name="keywords" content="Blog" />
+</head>
+
+<body>
+<!-- header -->
+<div id="home" class="banner">
+<div class="header">
+	<div class="container">
+		<div class="logo">
+			<a th:href="@{/}"> <img src="/images/logo.png" alt="" width="30%" height="25%"/></a>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+<!-- //header -->
+
+<div th:replace="nav_::_nav "></div>
+
+<!--	quote-->
+<div class="banner-text">
+	<div class="container">
+		<h1> “说不定我一生涓滴意念，侥幸汇成河”</h1>
+	</div>
+</div>
+
+<div class="banner-bottom">
+	<div class="container">
+		<div class="col-md-4 banner-grid">
+			<div class="icon-right">
+				<img src="/images/icon1.png" alt=""/>
+			</div>
+
+			<div class="text-left">
+			<ul>
+				<li><a href="#"> 新的文章 </a></li>
+			</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="col-md-4 banner-grid2">
+			<div class="icon-right2">
+				<img src="/images/icon2.png" alt=""/>
+			</div>
+			<div class="text-left">
+			<ul>
+				<li><a href="#">新的说说</a></li>\
+			</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+			<div class="col-md-4 banner-grid3">
+				<div class="icon-right3">
+					<img src="/images/icon3.png" alt=""/>
+				</div>
+				<div class="text-left">
+				<ul>
+					<li><a href="#"> 新的评论</a></li>
+				</ul>
+				</div>
+				<div class="clearfix"> </div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+
+</div>
+</div>
+
+<div th:replace="nav_::_information"></div>
+<div th:replace="nav_::_footer "></div>
+
+
+</body>
+</html>

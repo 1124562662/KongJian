@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login</title>
+
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--	Specifies the character encoding for the document.-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--	Defines a time interval for the document to refresh itself.-->
+    <!--<meta http-equiv="refresh" content="30000">-->
+    <meta name="keywords" content="Blog" />
+</head>
+<body>
+
+<div th:replace="nav_::_nav "></div>
+
+
+<div class="center">
+<form method="POST" th:action="@{/login}" id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" /><br/>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" /><br/>
+    <div class="center">
+        <input type="submit" value="Login"/>
+    </div>
+</form>
+</div>
+
+
+<div th:replace="nav_::_information"></div>
+<div th:replace="nav_::_footer "></div>
+</body>
+</html>

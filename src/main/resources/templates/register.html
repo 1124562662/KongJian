@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>register</title>
+
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--	Specifies the character encoding for the document.-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--	Defines a time interval for the document to refresh itself.-->
+    <!--<meta http-equiv="refresh" content="30000">-->
+    <meta name="keywords" content="Blog" />
+</head>
+<body>
+<!-- //header -->
+<div th:replace="nav_::_nav "></div>
+
+
+<form action="#"  th:action="@{/register}" th:object="${UserRegistrationForm}" method="POST" >
+    <label for="Username">Username: </label>
+     <input type="text" th:field = "*{Username}"/><br/>
+    <label for="password">Password: </label>
+    <input type="text"th:field = "*{passWord}"/><br/>
+    <label for="NickName"> Nick Name:</label>
+    <input type="text" th:field = "*{Nickname}"/><br/>
+    <input type="submit" value="Submit"/>
+</form>
+
+<div th:replace="nav_::_information"></div>
+<div th:replace="nav_::_footer "></div>
+
+</body>
+</html>
